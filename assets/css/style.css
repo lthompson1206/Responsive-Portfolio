@@ -121,8 +121,12 @@ body {
   
 a:hover {
   background: #4aaaa5;
+<<<<<<< HEAD
   color:white;
   text-align: center;
+=======
+  color:white
+>>>>>>> 52ae0d5303a5577ea48359070e8674c49ebd6ddb
 }
 
   nav {
@@ -303,6 +307,10 @@ a:hover {
             body {
               background-color: white;
             }
+<<<<<<< HEAD
 
           }
           
+=======
+          
+>>>>>>> 52ae0d5303a5577ea48359070e8674c49ebd6ddb
