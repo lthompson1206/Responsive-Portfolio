@@ -37,34 +37,101 @@
           developing quick and responsive modern web apps.</strong></p>
 
 
-      <p> CORE TECHNOLOGIES </p>
+      <p><strong>CORE TECHNOLOGIES</strong></p>
 
-      <p class="icons"><i class="fab hover-text fa-html5" style="font-size:48px;color:#666666;"></i><span
-            class="tool-tip">html5</span>     <i class="fab hover-text fa-css3-alt"
-          style="font-size:48px;color:#666666;"></i><span class="tool-tip">CSS3</span> <i
-          class="fab hover-text fa-js-square" style="font-size:48px;color:#666666;"></i><span
-            class="tool-tip">JavaScript</span> <i class="fab hover-text fa-node-js"
-          style="font-size:48px;color:#666666;"></i><span class="tool-tip">Node</span> <i
-          class="fab hover-text fa-github" style="font-size:48px;color:#666666;"></i><span
-            class="tool-tip">GitHub</span> <i class="fab hover-text fa-react"
-          style="font-size:48px;color:#666666;"></i><span class="tool-tip">React</span>
-        <i class="fas hover-text fa-database" style="font-size:48px;color:#666666;"></i><span
-            class="tool-tip">Database</span></p>
+      <div id="box-container">
+
+        <div class="tooltip"><i class="fab hover-text fa-html5" style="font-size:48px;color:#666666;"></i>
+          <span class="tooltiptext" style="font-size:12px;">html5</span></div>
+
+        <div class="tooltip">
+          <i class="fab hover-text fa-css3-alt" style="font-size:48px;color:#666666;"></i><span class="tooltiptext"
+            style="font-size:12px;">CSS3</span></div>
+
+        <div class="tooltip">
+          <i class="fab hover-text fa-js-square" style="font-size:48px;color:#666666;"></i><span class="tooltiptext"
+            style="font-size:12px;">JavaScript</span></div>
+
+        <div class="tooltip">
+          <i class="fab hover-text fa-node-js" style="font-size:48px;color:#666666;"></i><span class="tooltiptext"
+            style="font-size:12px;">Node</span></div>
+
+        <div class="tooltip">
+          <i class="fab hover-text fa-github" style="font-size:48px;color:#666666;"></i><span class="tooltiptext"
+            style="font-size:12px;">GitHub</span></div>
+
+        <div class="tooltip">
+          <i class="fab hover-text fa-react" style="font-size:48px;color:#666666;"></i><span class="tooltiptext"
+            style="font-size:12px;">React</span></div>
+
+        <div class="tooltip">
+          <i class="fas hover-text fa-database" style="font-size:48px;color:#666666;"></i><span class="tooltiptext"
+            style="font-size:12px;">Database</span></div>
+      </div>
+
+      <br>
 
 
       <h3>LATEST ARTICLES ON THE BLOG</h3>
       <a href="https://trapnerdmont.home.blog/2019/06/06/database-face/"> <i class="fas fa-newspaper"></i> HOW DATABASE
-        HELP ME SEE EVERYTHING... June 6th, 2019</a>
-        <br>
+        HELP ME SEE EVERYTHING</a>
+      <p>June 6th, 2019</p>
       <p>It's literally the best seat in the house for your direction</p>
 
     </section>
 
-  </div>
+    <!DOCTYPE html>
+    <html>
+    <style>
+      #box-container {
+        display: flex;
+        height: 200px;
 
-  
-  <!-- make all of the icons over with the label showing the name
-  alter the contact icons so that it creates a new tab rather than replace the portfolio <table></table> --> -->
+      }
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        width: 600px;
+        height: 50px;
+
+        display: -webkit-flex;
+        /* Safari */
+        -webkit-justify-content: space-between;
+        /* Safari 6.1+ */
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 56px;
+        height: 34px;
+        background-color: #4aaaa5;
+        ;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+    </style>
+
+
+
+
+
+  </div>
 
   <footer id="mastfoot">
     <div class="footer-container">
