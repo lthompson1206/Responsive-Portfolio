@@ -3,12 +3,31 @@ body {
     font-size: 18px;
     line-height: 34px;
     color: #777777;
-    background: url("../images/concrete_seamless.png");
+    background: url("./images/brick-wall-realistic_1284-4683.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   
   * {
     box-sizing: border-box;
+    
   }
+
+  
+
+  .tool-tip {
+    display: none;
+    background-color: grey;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .hover-text :hover + .tool-tip {
+    display: inline;
+    /* code */
+}
   
   /* general */
   
@@ -55,6 +74,16 @@ body {
   h3 {
     font-size: 22px;
   }
+
+  .icon {
+    font-size: xx-large;
+  }
+
+  img.source-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   
   /* header */
   
@@ -69,32 +98,40 @@ body {
     background: #ffffff;
     border-bottom: 2px solid #cccccc;
   }
+
   
-  #logo {
+  
+  a {
     float: left;
-    width: 250px;
-    height: 90px;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 90px;
-    color: #ffffff;
+    height: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 23px;
+    /* font-weight: 700; */
+    line-height: 50px;
+    color: #4aaaa5;
+    text-shadow: 0px 1px darkcyan;
     text-align: center;
     text-decoration: none;
-    background: #4aaaa5;
+    background: white;
+    /* border-radius gives a curve */
+    border-radius: 10px;
+    transition: .5s;
   }
+
   
+a:hover {
+  background: #4aaaa5;
+  color:white
+}
+
   nav {
     float: right;
-    margin-top: 25px;
   }
   
   nav a {
     display: inline-block;
-    padding-left: 15px;
-    margin-left: 15px;
-    line-height: 18px;
-    color: #999;
+    padding-left: 25px;
+    padding-right: 25px;
     text-decoration: none;
     border-left: 1px solid #efefef;
   }
@@ -104,17 +141,32 @@ body {
   }
   
   /* footer */
+
+  #mastfoot {
+    position: static;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 0px;
+    margin-bottom: 5%;
+    overflow: auto;
+    color: #ffffff;
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+  }
   
   footer {
-    padding: 30px 0;
+    padding: 100px;
     clear: both;
-    font-size: 12px;
+    line-height: 10px;
+    font-size: 40px;
     color: #ffffff;
     color: #cccccc;
-    text-align: center;
+    text-align: right;
     background: #666666;
     border-top: 8px solid #4aaaa5;
-    height: 50px;
+    height: 30px;
+    margin-top: 5%;
+    margin-bottom: 0%;
   }
   
   h3, h2 {
@@ -123,11 +175,17 @@ body {
     line-height: 22px;
     border-bottom: 2px solid #eeeeee;
   }
+
+  i:hover {
+    background: #4aaaa5;
+    color: #666666;
+  }
   
   /* main */
   
   #main-container {
     padding-top: 3px;
+    padding-bottom: 100px;
     min-height: calc(100vh - 70px);
   }
   
@@ -228,13 +286,17 @@ body {
     body {
       background-color: white;
     }
+  }
 
     @media screen and (max-width: 768px) {
         body {
           background-color: white;
         }
-
+      }
         @media screen and (max-width: 640px) {
             body {
               background-color: white;
             }
+
+          }
+          

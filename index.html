@@ -1,53 +1,158 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Your Name</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-  </head>
-  
-  <body>
 
-<header id="masthead">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | LThompson</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+
+  <header id="masthead">
     <div class="container">
-      <a href="./index.html" id="logo">Your Name</a>
+      <a href="./index.html" id="logo"><i class="fas fa-home"></i>Lamont Thompson</a>
+      <!-- make the logo button be the index.html main page -->
       <nav>
-        <a href="./index.html">About</a>
-        <a href="./portfolio.html">Portfolio</a>
-        <a href="./contact.html">Contact</a>
+        <a href="./contact.html"> <i class="fas fa-newspaper"></i> RESUME</a>
+        <a href="./portfolio.html"><i class="fas fa-cogs"></i> PROJECTS</a>
+        <a href="./resume.html"> <i class="fab fa-blogger-b"></i> BLOG</a>
       </nav>
     </div>
   </header>
 
   <div id="main-container" class="container">
+
     <section class="main-section">
-      <h1>About Me</h1>
 
-      <img src="./assets/css/images/Screenshot_20190318-184401_LinkedIn.jpg" class="auth-image" alt="Your Name">
+      <h1>HI, I'M LAMONT</h1>
 
-      <p>I am a full-stack web developer, and a back-end enthusiast! In fact, this entire portfolio is built in my own CSS framework! 
-          I am experienced in HTML5, CSS3, JavaScript, jQuery, Bootstrap, Bulma, Node, Express, Git, Mongodb, React, mySQL, and sequelize.</p>
+      <img src="./assets/css/images/Snapchat-538769484.jpg" class="auth-image" alt="Lamont Thompson">
 
 
-<p>I have built projects individually and as a team. 
-    While I enjoy front-end development, I am extremely passionate about creating a super-functional and intuitive back-end user experience. </p>
+
+      <p><strong>I am a certified software developer in the New York City area. I received my training
+          from a bootcamp at Rutgers University! The skills I gained sparked my love for
+          developing quick and responsive modern web apps.</strong></p>
 
 
-<p>I am a life-long learner. I am driven to learn cutting-edge technologies and master those with which I am already familiar. 
-        I am currently building a STEM program for adults continuing education on a post-high school level, before deciding I wanted to learn web development. 
-        The same desire to learn and grow that contributed to my success in the classroom led me to enter and complete a full-time web development bootcamp at UNC Charlotte.
-I am currently an intern at a rehabilitation-vocational institution for those returning to society, but I am still looking for a full-time front end or full-stack position.</p>
+      <p><strong>CORE TECHNOLOGIES</strong></p>
 
+      <div id="box-container">
+
+        <div class="tooltip"><i class="fab hover-text fa-html5" style="font-size:48px;color:#666666;"></i>
+          <span class="tooltiptext" style="font-size:12px;">html5</span></div>
+
+        <div class="tooltip">
+          <i class="fab hover-text fa-css3-alt" style="font-size:48px;color:#666666;"></i><span class="tooltiptext"
+            style="font-size:12px;">CSS3</span></div>
+
+        <div class="tooltip">
+          <i class="fab hover-text fa-js-square" style="font-size:48px;color:#666666;"></i><span class="tooltiptext"
+            style="font-size:12px;">JavaScript</span></div>
+
+        <div class="tooltip">
+          <i class="fab hover-text fa-node-js" style="font-size:48px;color:#666666;"></i><span class="tooltiptext"
+            style="font-size:12px;">Node</span></div>
+
+        <div class="tooltip">
+          <i class="fab hover-text fa-github" style="font-size:48px;color:#666666;"></i><span class="tooltiptext"
+            style="font-size:12px;">GitHub</span></div>
+
+        <div class="tooltip">
+          <i class="fab hover-text fa-react" style="font-size:48px;color:#666666;"></i><span class="tooltiptext"
+            style="font-size:12px;">React</span></div>
+
+        <div class="tooltip">
+          <i class="fas hover-text fa-database" style="font-size:48px;color:#666666;"></i><span class="tooltiptext"
+            style="font-size:12px;">Database</span></div>
+      </div>
+
+      <br>
+
+
+      <h3>LATEST ARTICLES ON THE BLOG</h3>
+      <a href="https://trapnerdmont.home.blog/2019/06/06/database-face/"> <i class="fas fa-newspaper"></i> HOW DATABASE
+        HELP ME SEE EVERYTHING</a>
+      <p>June 6th, 2019</p>
+      <p>It's literally the best seat in the house for your direction</p>
 
     </section>
 
+    <!DOCTYPE html>
+    <html>
+    <style>
+      #box-container {
+        display: flex;
+        height: 200px;
+
+      }
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        width: 600px;
+        height: 50px;
+
+        display: -webkit-flex;
+        /* Safari */
+        -webkit-justify-content: space-between;
+        /* Safari 6.1+ */
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 56px;
+        height: 34px;
+        background-color: #4aaaa5;
+        ;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+    </style>
+
+
+
+
+
   </div>
 
-  <footer>
-    <div class="container">
-      Copyright &copy; 
-    </div>
-  </footer>
+
+
+  <footer id="mastfoot">
+      <div class="footer-container">
+        <h3>CONTACT LAMONT</h3>
+        <nav>
+        <i class="fas fa-envelope-square"></i>
+        <a href="https://github.com/lthompson1206" target="_blank" class="hover-text"><i class="fab fa-github-square"
+            style="font-size:48px;color: darkgray;"></i></a>
+        <a href="https://www.linkedin.com/in/lamont-thompson-8ab6558a/" target="_blank" class="hover-text"><i
+            class="fab fa-linkedin" style="font-size:48px;color: darkgray;"></i></a>
+        <a href="https://twitter.com/Monte_Raye" target="_blank" class="hover-text"><i class="fab fa-twitter-square"
+            style="font-size:48px;color:  darkgray;"></i></a>
+        <a href="https://www.facebook.com/Montega2k12" target="_blank" class="hover-text"><i class="fab fa-facebook"
+            style="font-size:48px;color: darkgray;"></i></a>
+          </nav>
+          <br>
+        <h3>Copyright &copy;</h3>
+      </div>
+    </footer>
 </body>
 
 </html>
