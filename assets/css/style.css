@@ -121,7 +121,8 @@ body {
   
 a:hover {
   background: #4aaaa5;
-  color:white
+  color:white;
+  text-align: center;
 }
 
   nav {
@@ -168,6 +169,15 @@ a:hover {
     margin-top: 5%;
     margin-bottom: 0%;
   }
+  
+  .footer-container {
+    width: 100%;
+    max-width: 960px;
+    
+    margin: 0 auto;
+    clear: both;
+}
+  
   
   h3, h2 {
     padding-bottom: 20px;
@@ -299,4 +309,6 @@ a:hover {
             }
 
           }
+          
+
           
