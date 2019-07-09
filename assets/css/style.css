@@ -12,7 +12,7 @@ body {
   
   * {
     box-sizing: border-box;
-    
+    margin: 0px;
   }
 
   
@@ -147,7 +147,7 @@ a:hover {
     z-index: 99;
     width: 100%;
     margin: 0 0 0px;
-    margin-bottom: 5%;
+    
     overflow: auto;
     color: #ffffff;
     background: #ffffff;
@@ -155,7 +155,7 @@ a:hover {
   }
   
   footer {
-    padding: 100px;
+    padding: 20px 100px;
     clear: both;
     line-height: 10px;
     font-size: 40px;
@@ -164,7 +164,7 @@ a:hover {
     text-align: right;
     background: #666666;
     border-top: 8px solid #4aaaa5;
-    height: 30px;
+  
     margin-top: 5%;
     margin-bottom: 0%;
   }
