@@ -294,18 +294,18 @@ a:hover {
 
   @media screen and (max-width: 980px) {
     * {
-      background-color: blue;
+      background-color: white;
     }
   }
 
     @media screen and (max-width: 768px) {
         * {
-          background-color: yellow;
+          background-color: white;
         }
       }
         @media screen and (max-width: 640px) {
             * {
-              background-color: red;
+              background-color: white;
             }
 
           }
